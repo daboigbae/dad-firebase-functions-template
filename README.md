@@ -30,14 +30,10 @@ cd YOUR_PROJECT_NAME
 * [ ] Replace `YOUR_FIREBASE_PROJECT_ID` in `.firebaserc`.
 * [ ] Update the `name` field in `package.json` to your project name.
 * [ ] Run `firebase login` and `firebase use --add`.
-* [ ] Test locally with `npm run dev`.
+* [ ] Build the project: `cd functions && npm run build`
+* [ ] Test locally with `npm run dev` (or use `npm run serve` to build + run emulator)
 * [ ] Run linting: `cd functions && npm run lint`
 * [ ] Deploy with `npm run deploy`.
-* [ ] (Optional) Add secrets with:
-
-  ```bash
-  firebase functions:secrets:set MY_SECRET
-  ```
 
 ---
 
