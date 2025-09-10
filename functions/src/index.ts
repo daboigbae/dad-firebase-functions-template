@@ -5,6 +5,7 @@ import * as logger from "firebase-functions/logger";
 
 // Export auth functions
 export { onUserSignup } from "./firebase/authentication/onUserSignup";
+export { onUserDelete } from "./firebase/authentication/onUserDelete";
 
 // Global defaults (safe + cheap). Tweak later per function if needed.
 setGlobalOptions({
