@@ -1,0 +1,10 @@
+{
+  "name": "dad-firebase-functions-template",
+  "private": true,
+  "scripts": {
+    "dev": "firebase emulators:start --only functions",
+    "deploy": "firebase deploy --only functions",
+    "test": "npm --prefix functions run test",
+    "typecheck": "npm --prefix functions run typecheck"
+  }
+}
