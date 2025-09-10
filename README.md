@@ -10,22 +10,23 @@ Includes: Firebase Functions v2, TypeScript, ESLint, and a sample `hello` HTTP f
 ### Option A — Use this template
 1. Click **Use this template** on GitHub.  
 2. Clone your new repo:  
-   ```bash
+   ```
+   bash
    git clone https://github.com/YOUR_GITHUB_USERNAME/dad-firebase-functions-template my-app
    cd my-app
-````
+   ```
 
 3. Install dependencies and connect to Firebase:
-
-   ```bash
+   ```
+   bash
    npm install
    firebase login
    firebase use --add   # pick your Firebase project
    ```
 
 ### Option B — Clone with degit
-
-```bash
+```
+bash
 npx degit daboigbae/dad-firebase-functions-template my-app
 cd my-app
 npm install
@@ -38,13 +39,12 @@ firebase use --add
 ## 🛠 Development
 
 Run the local emulator:
-
-```bash
+```
+bash
 npm run dev
 ```
 
 Visit:
-
 ```
 http://127.0.0.1:5001/YOUR_PROJECT_ID/us-central1/hello
 ```
@@ -54,15 +54,14 @@ http://127.0.0.1:5001/YOUR_PROJECT_ID/us-central1/hello
 ## 🚢 Deploy
 
 Deploy functions to your Firebase project:
-
-```bash
+```
+bash
 npm run deploy
 ```
 
 ---
 
 ## ✅ Checklist
-
 * [ ] Replace `YOUR_FIREBASE_PROJECT_ID` in `.firebaserc`.
 * [ ] Run `firebase login` and `firebase use --add`.
 * [ ] Test locally with `npm run dev`.
