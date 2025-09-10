@@ -3,6 +3,9 @@ import { setGlobalOptions } from "firebase-functions/v2/options";
 import { onRequest } from "firebase-functions/v2/https";
 import * as logger from "firebase-functions/logger";
 
+// Export auth functions
+export { onUserSignup } from "./firebase/authentication/onUserSignup";
+
 // Global defaults (safe + cheap). Tweak later per function if needed.
 setGlobalOptions({
   region: "us-central1",
