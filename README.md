@@ -16,58 +16,22 @@ Includes: Firebase Functions v2, TypeScript, ESLint, and a sample `hello` HTTP f
    cd my-app
    ```
 
-3. Install dependencies and connect to Firebase:
-   ```
-   bash
-   cd functions && npm install
-   cd ..
-   firebase login
-   firebase use --add   # pick your Firebase project
-   ```
-
 ### Option B — Clone with degit
 ```
 bash
 npx degit daboigbae/dad-firebase-functions-template YOUR_PROJECT_NAME
 cd YOUR_PROJECT_NAME
-cd functions && npm install
-cd ..
-firebase login
-firebase use --add
-```
-
----
-
-## 🛠 Development
-
-Run the local emulator:
-```
-bash
-npm run dev
-```
-
-Visit:
-```
-http://127.0.0.1:5001/YOUR_PROJECT_ID/us-central1/hello
-```
-
----
-
-## 🚢 Deploy
-
-Deploy functions to your Firebase project:
-```
-bash
-npm run deploy
 ```
 
 ---
 
 ## ✅ Checklist
+* [ ] Install dependencies: `cd functions && npm install`
 * [ ] Replace `YOUR_FIREBASE_PROJECT_ID` in `.firebaserc`.
 * [ ] Update the `name` field in `package.json` to your project name.
 * [ ] Run `firebase login` and `firebase use --add`.
 * [ ] Test locally with `npm run dev`.
+* [ ] Run linting: `cd functions && npm run lint`
 * [ ] Deploy with `npm run deploy`.
 * [ ] (Optional) Add secrets with:
 

@@ -21,7 +21,7 @@ export const onUserDelete = functions.auth
     // - Send deletion confirmation email
     // - Update user counts/statistics
     // - Archive user data for compliance
-    
+
     // Example: Log the deletion event
-    logger.info("User deletion processed successfully", { uid: user.uid });
+    logger.info("User deletion processed successfully", {uid: user.uid});
   });

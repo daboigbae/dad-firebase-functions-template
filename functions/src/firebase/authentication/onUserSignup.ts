@@ -20,7 +20,7 @@ export const onUserSignup = functions.auth
     // - Set up default preferences
     // - Add to analytics
     // - Create user-specific collections
-    
+
     // Example: Log the signup event
-    logger.info("User signup processed successfully", { uid: user.uid });
+    logger.info("User signup processed successfully", {uid: user.uid});
   });
