@@ -1,5 +1,5 @@
 {
-  "name": "dad-firebase-functions-template",
+  "name": "YOUR_PROJECT_NAME",
   "private": true,
   "scripts": {
     "dev": "firebase emulators:start --only functions",

@@ -19,7 +19,8 @@ Includes: Firebase Functions v2, TypeScript, ESLint, and a sample `hello` HTTP f
 3. Install dependencies and connect to Firebase:
    ```
    bash
-   npm install
+   cd functions && npm install
+   cd ..
    firebase login
    firebase use --add   # pick your Firebase project
    ```
@@ -27,9 +28,10 @@ Includes: Firebase Functions v2, TypeScript, ESLint, and a sample `hello` HTTP f
 ### Option B — Clone with degit
 ```
 bash
-npx degit daboigbae/dad-firebase-functions-template my-app
-cd my-app
-npm install
+npx degit daboigbae/dad-firebase-functions-template YOUR_PROJECT_NAME
+cd YOUR_PROJECT_NAME
+cd functions && npm install
+cd ..
 firebase login
 firebase use --add
 ```
@@ -63,6 +65,7 @@ npm run deploy
 
 ## ✅ Checklist
 * [ ] Replace `YOUR_FIREBASE_PROJECT_ID` in `.firebaserc`.
+* [ ] Update the `name` field in `package.json` to your project name.
 * [ ] Run `firebase login` and `firebase use --add`.
 * [ ] Test locally with `npm run dev`.
 * [ ] Deploy with `npm run deploy`.
@@ -77,14 +80,19 @@ npm run deploy
 ## 📂 Project Structure
 
 ```
-dad-firebase-functions-template/
+YOUR_PROJECT_NAME/
 ├── firebase.json          # Emulator + deploy config
 ├── .firebaserc            # Project alias (replace with your ID)
+├── package.json           # Root scripts (update name field)
 ├── functions/
-│   ├── src/index.ts       # Sample hello function (v2)
+│   ├── src/
+│   │   ├── index.ts       # Main exports + sample hello function
+│   │   └── firebase/
+│   │       └── authentication/
+│   │           ├── onUserSignup.ts    # User creation handler
+│   │           └── onUserDelete.ts    # User deletion handler
 │   ├── tsconfig.json      # TypeScript config
-│   ├── package.json       # Functions deps + build scripts
-├── package.json           # Root scripts (dev, deploy, test)
+│   └── package.json       # Functions deps + build scripts
 └── README.md              # You are here
 ```
 
